@@ -1,0 +1,92 @@
+<!-- 4. Projets (projets.html)
+Présentez au minimum :
+ 3 projets.
+Pour chaque projet :
+ Titre ;
+ Description ;
+ Technologies utilisées ;
+ Illustration.
+Fonction JavaScript
+Ajouter un bouton « Voir plus » permettant d'afficher des informations complémentaires. -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Projets</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projets">
+            <h2>Mes Projets</h2>
+
+            <div class="projet">
+                <h3>Projet 1 : Analyse de données patients</h3>
+                <p>Description : Ce projet consiste à développer une application Python de prétraitement et nettoyage de données médicales pour une clinique. Les données proviennent d'un fichier patients_bruts.txt contenant 300 lignes de données patients collectées depuis plusieurs sources sur plusieurs années.</p>
+                <p>Technologies utilisées : Python, Scikit-learn, Pandas, NumPy</p>
+                <img src="images/projet1.jpg" alt="Illustration du projet 1" width="300">
+                <button id="voir-plus-projet1">Voir plus</button>
+                <div id="details-projet1" style="display: none;">
+                    <p>En traitant 300 patients réels, nous avons détecté et corrigé automatiquement des dizaines d'erreurs, produit un dataset propre de 185 patients prêts pour l'analyse. Ce travail nous prépare directement à l'utilisation future de bibliothèques comme NumPy et Pandas .
+                    Nous comprenons maintenant ce qu'elles automatisent pour nous.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projet">
+                <h3>Projet 2 : Analyse des Habitudes de Consommation de Boissons — Cafétéria Universitaire</h3>
+                <p>Description : Ce Projet de Statistique et Probabilités a pour objectif d'analyser la consommation de boissons faite par les étudiants à l'aide de différentes techniques statistiques. Nous allons utiliser un ensemble de données fictives qui contient des informations sur la consommation de boissons par les étudiants, telles que le type de boisson, la quantité consommée, et l'identifiant de l'étudiant.</p>
+                <p>Technologies utilisées : Python, Pandas, Matplotlib</p>
+                <img src="images/projet2.jpg" alt="Illustration du projet 2" width="300">
+                <button id="voir-plus-projet2">Voir plus</button>
+                <div id="details-projet2" style="display: none;">
+                <p>
+                    Ce projet d'analyse des habitudes de consommation de boissons a permis de mettre en lumière plusieurs tendances chez les étudiants. Sur le plan univarié, le Soda (Gazelle) se distingue comme la boisson la plus prisée, avec une consommation moyenne de 4,025 verres par étudiant et une nette préférence pour les consommations du soir.
+                    L'analyse bivariée révèle que la température extérieure influence directement les quantités consommées, et que des écarts existent selon le sexe et l'âge des étudiants dans leurs choix de boissons. Ces résultats confirment l'intérêt de croiser plusieurs variables pour mieux comprendre le comportement de consommation.
+                    Du point de vue probabiliste, on observe que le café Touba représente environ 21 % des boissons consommées, et que 29 % des consommations ont lieu le matin — ce qui s'aligne avec les habitudes culturelles sénégalaises. En revanche, la consommation de jus par forte chaleur (15 %) et la forte consommation chez les garçons (3 %) restent des comportements plus marginaux.
+                    Enfin, le volet dénombrement a permis de quantifier les possibilités combinatoires du système : 15 combinaisons boisson × moment, 10 façons de choisir 3 boissons parmi 5, et 240 profils étudiants possibles.
+                    Ces résultats pourraient aider la cafétéria universitaire à mieux anticiper ses stocks (en privilégiant le Soda et le Café Touba) et à adapter ses promotions selon les moments de la journée et les conditions météorologiques.
+                </p>
+                </div>
+            </div>
+
+            <div class="projet">
+                <h3>Projet 3 :  Régression Linéaire en NumPy</h3>
+                <p>Description : 
+                    La régression linéaire est une technique d'apprentissage supervisé qui permet de modéliser la relation entre une variable dépendante et une ou plusieurs variables indépendantes. Dans ce projet, nous allons implémenter la régression linéaire à partir de zéro en utilisant NumPy pour effectuer les calculs nécessaires. Pour predire le prix d'un mouton ladoum en fonction de son poids, de sa taille et de son poids.
+                </p>
+                <p>Technologies utilisées : Python, NumPy</p>
+                <img src="images/projet3.jpg" alt="Illustration du projet 3" width="300">
+                <button id="voir-plus-projet3">Voir plus</button>
+                <div id="details-projet3" style="display: none;">
+                    <p>
+                        Ce projet de régression linéaire a permis de mettre en pratique les concepts fondamentaux de l'apprentissage supervisé et de la modélisation statistique. En implémentant la régression linéaire à partir de zéro avec NumPy, nous avons pu comprendre en profondeur les étapes du processus, depuis la préparation des données jusqu'à l'évaluation du modèle.
+                        Nous avons utilisé un dataset fictif de moutons Ladoum, avec des caractéristiques telles que le poids, la taille et le prix. Après avoir préparé les données, nous avons calculé les coefficients de la régression linéaire en utilisant la formule analytique, ce qui nous a permis de prédire le prix des moutons en fonction de leurs caractéristiques.
+                        L'évaluation du modèle a montré une bonne performance, avec un coefficient de détermination (R²) élevé, indiquant que notre modèle explique une grande partie de la variance des prix des moutons. Ce projet a renforcé notre compréhension de la régression linéaire et nous a préparés à aborder des techniques plus avancées d'apprentissage automatique à l'avenir.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Abdou Aziz SAMB. Tous droits réservés.</p>
+    </footer>
+    <script src="js/script.js"></script>    
+
+</body>
+</html>

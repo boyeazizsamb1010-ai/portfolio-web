@@ -1,0 +1,105 @@
+<!-- 3. Compétences (competences.html)
+Présentez au minimum :
+ 5 compétences techniques ;
+ Le niveau de maîtrise de chaque compétence. 
+Fonction JavaScript
+Ajouter un bouton permettant :
+ d'afficher ou masquer les détails des compétences.-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Compétences Techniques</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="competences-techniques">
+            <h2>Compétences Techniques</h2>
+
+            <ul class="ma-liste-competences">
+
+                <li class="competence">
+                    <h3>Python</h3>
+                    <p>Niveau : Intermédiaire</p>
+                    <button id="bouton-python">Voir détails</button>
+                    <div id="details-python" style="display: none;">
+                        <p class="details">
+                            Expérience avec les bibliothèques telles que NumPy, Pandas, Scikit-learn pour l'analyse de données.
+                            C'est une compétence essentielle pour le développement de modèles d'apprentissage automatique et l'analyse de données dans le domaine de l'intelligence artificielle.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="competence">
+                    <h3>Langage C</h3>
+                    <p>Niveau : Intermédiaire</p>
+                    <button id="bouton-c">Voir détails</button>
+                    <div id="details-c"  style="display: none;">
+                        <p class="details">
+                            Expérience avec le langage C pour le développement de programmes système et embarqués.
+                            C'est une compétence essentielle pour comprendre les concepts fondamentaux de l'informatique et du développement de logiciels.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="competence">
+                    <h3>JavaScript</h3>
+                    <p>Niveau : Intermédiaire</p>
+                    <button id="bouton-java">Voir détails</button>
+                    <div id="details-java" style="display: none;">
+                        <p class="details">
+                            Expérience avec le langage JavaScript pour le développement web front-end et back-end.
+                            C'est une compétence essentielle pour créer des applications web interactives et dynamiques.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="competence">
+                    <h3>Statistiques et Probabilités</h3>
+                    <p>Niveau : Intermédiaire</p>
+                    <button id="bouton-stats">Voir détails</button>
+                    <div id="details-stats" style="display: none;">
+                        <p class="details">
+                            Expérience avec les méthodes statistiques et les modèles de probabilités pour l'analyse de données.
+                            C'est une compétence essentielle pour comprendre les données et prendre des décisions éclairées dans le domaine de l'intelligence artificielle.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="competence">
+                    <h3>Analyse et algèbre lineaire</h3>
+                    <p>Niveau : Intermédiaire</p>
+                    <button id="bouton-analyse">Voir détails</button>
+                    <div id="details-analyse" style="display: none;">
+                        <p class="details">
+                            Expérience avec les méthodes d'analyse et d'algèbre pour la résolution de problèmes mathématiques.
+                            C'est une compétence essentielle pour comprendre les concepts fondamentaux de l'intelligence artificielle et de l'apprentissage automatique. Transformer la vie réelle en mathématique pour résoudre des problèmes complexes.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Abdou Aziz SAMB. Tous droits réservés.</p>
+    </footer>
+    <script src="js/script.js"></script>    
+</body>
+</html>
